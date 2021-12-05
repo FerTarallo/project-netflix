@@ -1,0 +1,66 @@
+:root {
+    --background: rgb(0, 0, 0);
+    --text-title: rgb(255, 255, 255);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//font-size: 16px (Desktop)
+html { 
+    @media (max-width: 1080px) {
+      font-size: 93.75%; //15px
+    }
+    
+    @media (max-width: 720px) {
+      font: 87.5%; //14px
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--text-title);
+}
+
+body, button { 
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased; //fontes detalhadas
+}
+
+button {
+    background: var(--text-title);
+    color: var(--background);
+
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+strong {
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text-title);
+}
+
+input {
+  border-radius: 0.5rem;
+  border: none;
+  width: 20%;
+  padding: 0.5rem;
+  height: 2rem;
+  outline: none;
+}

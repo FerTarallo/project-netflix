@@ -1,0 +1,66 @@
+.container-menu {
+    margin: 0 auto;
+    height: 8rem;
+    padding: 1rem 2rem;
+    background: var(--background);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content-menu {
+        display: flex;
+        justify-content: space-around;
+
+        .menu {
+            color: var(--text-title);
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3rem;
+            padding: 3rem;
+
+            div {
+                cursor: pointer;
+            }
+        }
+    }
+
+    img {
+        height: 7rem;
+    }
+
+    img:nth-child(2) {
+        border-radius: 50%;
+        height: 3rem;
+    }
+}
+
+.container-panel {
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .content-panel {
+        color: var(--text-title);
+
+        h1 {
+            font-size: 3rem;
+            font-family: 'Abril Fatface', cursive;
+        }
+
+        p {
+            text-justify: initial;
+        }
+    }
+
+    .content-panel-button {
+        display: flex;
+        gap: 1rem;
+    }
+
+}
